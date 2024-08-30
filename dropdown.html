@@ -1,0 +1,124 @@
+<div class="dropdown">
+    <div class="select">
+        <span class="selected">
+            About Us
+        </span>
+        <div class="caret"></div>
+    </div>
+    <ul class="drpmenu">
+        <li class="active">About Us</li>
+        <li>News & Events</li>
+        <li>Board</li>
+        <li>Awards</li>
+        <li>Senior Management</li>
+    </ul>
+</div>
+
+<style>
+    .dropdown{
+        min-width: 15em;
+        position: relative;
+        margin: 2em;
+    }
+    .dropdown *{
+        box-sizing: border-box;
+    }
+    .select{
+        background: #2a2f3b;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px #2a2f3b solid;
+        border-radius: 0.5em;
+        padding: 1em;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    .select-clicked{
+        border: 2px #26489a solid;
+        box-shadow: 0 0 0.8em #26489a;
+    }
+    .select:hover{
+        background-color: #323741;
+    }
+    .caret{
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 6px solid #fff;
+        transition: 0.3s;
+    }
+
+    .caret-rotate{
+        transform: rotate(180deg);
+    }
+    .drpmenu{
+        list-style: none;
+        padding: 0.2em 0.5em;
+        background-color: #323741;
+        border: 1px #363a43 solid;
+        box-shadow: 0 0.5em 1em rgba(0, 0, 0,0.2);
+        border-radius: 0.5em;
+        color: #9fa5b5;
+        position: absolute;
+        top: 3em;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        opacity: 0;
+        display: none;
+        transition: 0.2s;
+        z-index: 1;
+    }
+    .drpmenu li{
+        padding: 0.7em 0.5em;
+        margin: 0.3em 0;
+        border-radius: 0.5em;
+        cursor: pointer;
+    }
+    .drpmenu li:hover{
+        background-color: #2a2d35;
+    }
+    .active{
+        background-color: #23242a;
+    }
+    .drpmenu-open{
+        display: block;
+        opacity: 1;
+    }
+</style>
+
+
+<script>
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(dropdown =>{
+        const select = dropdown.querySelector('.select');
+        const caret = dropdown.querySelector('.caret');
+        const drpmenu = dropdown.querySelector('.drpmenu');
+        const options = dropdown.querySelectorAll('.drpmenu li');
+        const selected = dropdown.querySelector('.selected');
+
+
+        select.addEventListener('click',()=>{
+            select.classList.toggle('select-clicked');
+            caret.classList.toggle('caret-rotate');
+            drpmenu.classList.toggle('drpmenu-open');
+        });
+
+        options.forEach(option =>{
+            option.addEventListener('click',() => {
+                selected.innerText = option.innerText;
+                select.classList.remove('select-clicked');
+                caret.classList.remove('caret-rotate');
+                drpmenu.classList.remove('drpmenu-open');
+                options.forEach(option => {
+                    option.classList.remove('.active');
+                });
+                option.classList.add('active');
+            });
+        });
+    });
+</script>
