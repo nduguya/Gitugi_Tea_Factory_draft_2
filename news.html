@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gitugi- Kenya</title>
+
+    <!--font awesome links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <!--icon scout cdn-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+     <!--favicon-->
+     <link rel="icon" href="gallery/KTDA-Default-Blog.webp"type="images/x-icon"/>
+    <!--google fonts cdn-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">    
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+         <!--swiper js link-->
+          <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+       <!--custom css link-->
+       <link rel="stylesheet" href="./css/styles.css">
+       <link rel="stylesheet" href="./css/about.css">
+       <link rel="stylesheet" href="./css/collo.css">
+</head>
+<body>
+      <!--====Header section begins here======-->
+
+<header class="header">
+    <a href="#" class="logo">Gitugi<span>Tea<br>Factory</span></a>
+
+     <nav class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./dropdown.html">About Us</a>
+        <a href="./services.html">FAQs</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./contact.html">Contacts</a>  
+     </nav>
+
+     <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="info-btn" class="fas fa-info-circle"></div>
+        
+       
+     </div>
+
+
+</header>
+
+
+
+<div class="contact-info">
+    
+     <div id="close-contact-info" class="fas fa-times"></div>
+
+    <div class="info">
+        <i class="fas fa-phone"></i>
+        <h3>Call Us</h3>
+        <p><a href="tel:0741230513">+254741230513</a></p>
+        <p><a href="tel:0741230513">+254114138091</a></p>
+    </div>
+
+    <div class="info">
+        <i class="fas fa-envelope"></i>
+        <h3>Email <Address></Address></h3>
+        <p><a href="mailto:">your email</a></p>
+        <!--<p><a href="">nduguya123@gmail.com</a></p>-->
+    </div>
+
+    <div class="info">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Office Address</h3>
+        <p>your location Kenya</p>
+        
+    </div>
+
+    <div class="share">
+        <a href="https://www.facebook.com/" class="fab fa-facebook-f" target="_blank"></a>
+        <a href="https://wa.me/254786968096? text=Thank you for contacting Binders- Company-Kenya" class="fab fa-whatsapp" target="_blank"></a>
+        <a href="#" class="fab fa-twitter" target="_blank"></a>
+        <a href="https://www.instagram.com/" target="_blank" class="fab fa-instagram"></a>
+    </div>
+
+</div>
+
+
+
+
+
+<!--===========Subscribe section==========-->
+<section class="subscribe" style="
+background: linear-gradient(0deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(./images/new/greenland_teas.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+opacity:0.9; height: 54.959rem;">
+    <div class="subscribe-content rowzie containery">
+        <div class="dropdown">
+            <div class="select">
+                <span class="selected">
+                    News & Events
+                </span>
+                <div class="caret"></div>
+            </div>
+            <ul class="drpmenu">
+                <a href="./news.html"><li class="active">News & Events</li></a>
+                <a href="./dropdown.html"><li>About Us</li></a>
+                <a href="./board.html"><li>Board of Directors</li></a>
+                <a href="./awards.html"><li>Awards & Certificates</li></a>
+                 <a href="#"><li>Financial Perfomance</li></a>
+                  <a href="#"><li>Annual Reports</li></a>
+                 <a href="./senior.html"><li>Senior Management</li></a>
+            </ul>
+        </div>
+
+ </div>
+</section>
+
+
+
+
+
+<style>
+    .dropdown{
+       min-width: 27em;
+        position: relative;
+        margin: 2em;
+    }
+    .dropdown *{
+        box-sizing: border-box;
+    }
+    .selected{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .select{
+        background: #345c00;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px goldenrod solid;
+        border-radius: 0.5em;
+        padding: 1em;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    .select-clicked{
+        border: 2px #26489a solid;
+        box-shadow: 0 0 0.8em #26489a;
+    }
+    .select:hover{
+        background-color: #345c00;
+    }
+    .caret{
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 6px solid #fff;
+        transition: 0.3s;
+    }
+
+    .caret-rotate{
+        transform: rotate(180deg);
+    }
+    .drpmenu{
+        list-style: none;
+        padding: 0.2em 0.5em;
+        background-color: #345c00;
+        border: 1px #363a43 solid;
+        box-shadow: 0 0.5em 1em rgba(0, 0, 0,0.2);
+        border-radius: 0.5em;
+        color: #9fa5b5;
+        position: absolute;
+        top: 3em;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        opacity: 0;
+        display: none;
+        transition: 0.2s;
+        z-index: 1;
+    }
+    .drpmenu li{
+        padding: 0.7em 0.5em;
+        margin: 0.3em 0;
+        border-radius: 0.5em;
+        cursor: pointer;
+    }
+    .drpmenu a{
+        text-decoration: none;
+        list-style: none;
+        color: #ffffff;
+        font-size: 2rem;
+        font-weight: 700;
+
+    }
+
+    .drpmenu li:hover{
+        color: #000;
+    }
+    .drpmenu li:hover{
+        background-color: goldenrod;
+    
+    }
+    .active{
+        background-color: goldenrod;
+    }
+    .drpmenu-open{
+        display: block;
+        opacity: 1;
+    }
+</style>
+
+
+<script>
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(dropdown =>{
+        const select = dropdown.querySelector('.select');
+        const caret = dropdown.querySelector('.caret');
+        const drpmenu = dropdown.querySelector('.drpmenu');
+        const options = dropdown.querySelectorAll('.drpmenu li');
+        const selected = dropdown.querySelector('.selected');
+
+
+        select.addEventListener('click',()=>{
+            select.classList.toggle('select-clicked');
+            caret.classList.toggle('caret-rotate');
+            drpmenu.classList.toggle('drpmenu-open');
+        });
+
+        options.forEach(option =>{
+            option.addEventListener('click',() => {
+                selected.innerText = option.innerText;
+                select.classList.remove('select-clicked');
+                caret.classList.remove('caret-rotate');
+                drpmenu.classList.remove('drpmenu-open');
+                options.forEach(option => {
+                    option.classList.remove('.active');
+                });
+                option.classList.add('active');
+            });
+        });
+    });
+</script>
+
+<!--====ABOUT US SECTION STARTS===-->
+
+<section class="about" id="about">
+
+    <h1 class="heading">Get informed of our latest News and Upcoming Events</h1>
+
+    <div class="row">
+      
+    <!--    
+        <div class="video">
+            <video src="" loop muted autoplay></video>
+        </div>
+    -->
+        
+    <div class="video">
+        <img src="./gteas/tea_centres.jpg" loop muted autoplay style="height:60rem;"></video>
+    </div>
+
+
+
+        <div class="content">
+            <h3>Every cup of our tea is an invitation to a sensory adventure!</h3>
+            <h4 style="font-size: 1.47rem;color: rgb(255, 179, 0);">Because you'll love what will taste on your palate!</h4>
+            <p>
+           <b>Gitugi Tea Factory Company -Kenya</b> 
+        
+           Our passion lies in transforming the bounty of Kenyan soil into a symphony of flavors.
+           From the moment the sun-kissed leaves arrive at our doorstep, we embark on a meticulous journey.
+           Everything is handled with the utmost care, ensuring only the finest quality graces our production line.
+           We are fully committed to crafting teas that are not only delicious but also consistent in their exquisite taste.
+        
+            </p>
+            <h4 style="font-size: 1.47rem;color: rgb(255, 179, 0)";>Discover the magic of Kenyan tea, crafted with passion and destined to become your new favorite cup.</h4>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+
+    </div>
+    <hr style="border-bottom: 2px solid black; margin:2rem;">
+   <h1 class="heading collo" style="margin: 3rem; text-align: center; justify-content: center;">Your New Home Starts Here</h1>
+   <hr style="border-bottom: 2px solid black; margin:2rem;">
+   
+
+    </div>
+
+</section>
